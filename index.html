@@ -4,9 +4,48 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <script src="js/bootstrap/bootstrap.min.js"></script>
     <title>Vite App</title>
   </head>
   <body>
+    <div class="container">
+      <div class="row justify-content-md-center mt-3">
+          <div class="col-1">
+          </div>
+          <div class="col-10">
+              <div class="card">
+                  <div class="card-header">
+                    Factura Electronica
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Registro </h5>
+                    <img src="" alt="" class="logoLoad">
+                    <form class="row g-3" id="frmDataLiga">
+                      <team-component></team-component>
+                      <div class="col-12">
+                          <div class="card border-warning mb-3" style="max-width: 100%;">
+                              <div class="card-header">Producto</div>
+                              <div class="card-body">
+                                <h5 class="card-title">Registre el producto </h5>
+                                <button type="button" class="btn btn-dark" id="addDoctor">+</button>
+                                <div class="container detailDoctors">
+
+                                </div>
+                              </div>
+                            </div>
+                      </div>
+                      <div class="col-12 justify-content-md-center">
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+          </div>
+          <div class="col-1">
+          </div>
+        </div>
+  </div>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
