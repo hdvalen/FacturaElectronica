@@ -27,8 +27,8 @@ export class TeamComponent extends HTMLElement {
               <input type="text" class="form-control" name="address" id="address">
           </div>
           <div class="col-md-12">
-              <label for="inputAddress" class="form-label">Correo Electronico</label>
-              <input type="email" class="form-control" name="address" id="address">
+              <label for="inputEmail" class="form-label">Correo Electronico</label>
+              <input type="email" class="form-control" name="EmailUsuario" id="EmailUsuario">
           </div>
       </div>
       `
