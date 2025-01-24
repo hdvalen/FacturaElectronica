@@ -4,7 +4,7 @@ export class TeamComponent extends HTMLElement {
       this.render();
   }
   render(){
-      
+    let id = Date.now().toString(16);
       this.innerHTML = /* html */ `
       <style rel="stylesheet">
         @import "./src/style.css";
@@ -12,7 +12,7 @@ export class TeamComponent extends HTMLElement {
       <div class="row g-3">
       <div class="col-md-12">
               <label for="nameTeam" class="form-label">Numero de Factura</label>
-              <input type="text" class="form-control" name="nameTeam" id="nameTeam">
+              <input type="text" class="form-control" placeholder=${id} name="nameTeam" id="nameTeam" disabled>
           </div>
           <div class="col-md-6">
               <label for="nameTeam" class="form-label">Nombre</label>
