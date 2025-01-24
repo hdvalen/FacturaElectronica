@@ -28,15 +28,19 @@ divContainerProduct.addEventListener('click', (e) => {
 
         // Validar que los campos no estén vacíos
         if (name && cantidad && valor) {
+
+            const subtotal = (cantidad * valor).toFixed(2); // calcular el subtotal
             // Crear una nueva fila en la tabla
             const newRow = `
                 <tr>
                     <th scope="row">${codigo}</th>
                     <td>${name}</td>
+                    <td>${valor}</td>
                     <td>${cantidad}</td>
-                    <td>${valor}</td>
-                    <td>${valor}</td>
-                    
+                    <td>${subtotal}</td>
+                    <td>
+                        <button type="button" class="btn btn-danger btn-sm" id="deleteProduct"> - </button>
+                    </td>
                 </tr>
             `;
 
@@ -48,6 +52,14 @@ divContainerProduct.addEventListener('click', (e) => {
         } else {
             alert("Por favor, completa todos los campos antes de registrar.");
         }
+    }
+});
+
+// Evento para eliminar un producto de la tabla
+divContainerTable.addEventListener('click', (e) => {
+    if (e.target.id === "deleteProduct") {
+        const row = e.target.closest('tr'); // Selecciona la fila correspondiente
+        row.remove(); // Elimina la fila de la tabla
     }
 });
 

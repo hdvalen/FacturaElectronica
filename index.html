@@ -63,6 +63,38 @@
           </div>
         </div>
   </div>
+  <div class="modal fade" id="modalPagar" tabindex="-1" aria-labelledby="modalPagarLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalPagarLabel">Resumen de Pago</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Estos son los productos registrados:</p>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Código</th>
+                <th scope="col">Producto</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Subtotal</th>
+              </tr>
+            </thead>
+            <tbody id="modalTableBody">
+              <!-- Aquí se inyectarán los datos dinámicamente -->
+            </tbody>
+          </table>
+          <p class="fw-bold">Total: <span id="modalTotal"></span></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-success" id="confirmarPago">Confirmar Pago</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
