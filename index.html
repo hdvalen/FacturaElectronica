@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <script src="js/bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="src/style.css">
+    <script type="module" src="src/main.js"></script>
     <title>Vite App</title>
   </head>
   <body>
@@ -24,19 +26,33 @@
                     <form class="row g-3" id="frmDataLiga">
                       <team-component></team-component>
                       <div class="col-12">
-                          <div class="card border-warning mb-3" style="max-width: 100%;">
-                              <div class="card-header">Producto</div>
+                          <div class="card border- mb-3" style="max-width: 100%;">
+                              <div class="card-header">Registro de productos</div>
                               <div class="card-body">
-                                <h5 class="card-title">Registre el producto </h5>
-                                <button type="button" class="btn btn-dark" id="addDoctor">+</button>
-                                <div class="container detailDoctors">
+                                <button type="button" class="btn btn-dark" id="addProduct">Agregar Producto</button>
+                                <div class="container productR">
 
                                 </div>
                               </div>
                             </div>
                       </div>
+
+                      <table class="table table-striped">
+                        <thead class="table-dark">
+                          <tr>
+                            <th scope="col">Codigo</th>
+                            <th scope="col">Nombre Producto</th>
+                            <th scope="col">Valor Unidad</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Subtotal</th>
+                          </tr>
+                        </thead>
+                        <tbody class="TableProducts">
+                          
+                        </tbody>
+                      </table>
                       <div class="col-12 justify-content-md-center">
-                        <button type="submit" class="btn btn-primary">Sign in</button>
+                        <button type="submit" class="btn btn-success">Pagar</button>
                       </div>
                     </form>
                   </div>

@@ -1,3 +1,7 @@
-*{
-  background-color: #ffffff;
+body{
+  background-color: #d7d7df;
+}
+
+.card{
+  box-shadow: 4px 2px 16px 0px rgba(102,102,102,1);
 }
